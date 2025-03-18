@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+body {
+    color: var(--color);
+    background-color: var(--background-page);
+}
+
+#header, #footer {
+    width: 100%;
+    height: 11vh;
+    background: linear-gradient(to bottom, var(--background-h-f-1), var(--background-h-f-2));
+    border-bottom: 4px solid var(--border-normal);
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#header {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+#theme-container{
+    width: 35px;
+    height: 35px;
+    border: 1px solid var(--border-box);
+}
+
+#main-container {
+    display: flex;
+}
+
+/* #image {
+    float: right;
+    position: fixed;
+} */
+
+#main {
+    margin-left: 15%;
+    margin-right: 15%;
+    background: var(--background-main);
+    border: 1px solid var(--border-normal);
+    padding: 20px 2.5%;
+}
+
+h1 {
+    margin-top: 7%;
+    text-align: center;
+}
+
+h2 {
+    font-size: inherit;
+    font-weight: 500;
+}
+
+p {
+    text-indent: 18px;
+    text-align: justify;
+}
+
+.box-text {
+    font-family: "Golos Text", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    word-spacing: 4px;
+    line-height: 2;
+}
+
+#navigation {
+    width: 320px;
+    height: 130px;
+    overflow-y: auto;
+    /* background: var(--background-box);
+    border: 1px solid var(--border-normal); */
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    font-size: 14px;
+}
+
+#navigation-name {
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    border-bottom: 4px double var(--border-navigation);
+}
+
+.button, img {
+    user-select: none;
+}
+
+#navigation-button::before {
+    content: '[';
+    color: var(--color);
+}
+
+#navigation-button::after {
+    content: ']';
+    color: var(--color);
+}
+
+.button {
+    color: var(--link);
+}
+
+.button:hover {
+    color: var(--link-hover);
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+}
+
+.toclevel-2 {
+    margin-left: 11px;
+}
+
+.tocnumber {
+    font-size: 13px;
+}
+
+#navigation-link a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: inherit;
+    line-height: 2.3;
+}
+
+#navigation-link .toclevel-1 a:hover, #navigation-link .toclevel-2 a:hover {
+    color: var(--link);
+    background-color: var(--border-box);
+    border-radius: 4px;
+    padding-left: 5px;
+    cursor: pointer;
+}
+
+#goldenratio {
+    display: flex;
+    float: right;
+    width: 74vh;
+    margin-left: 10px;
+}
+
+#gallery img {
+    display: block;
+    margin: 6% auto 2%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.gallery-box {
+    background-color: var(--background-box);
+    border: 2px solid var(--border-box);
+    margin-top: 25px;
+    padding: 20px;
+}
+
+#footer {
+    margin-bottom: 0;
+    margin-top: 50px;
+    border-bottom: 50px;
+    border-top: 4px solid var(--border-normal);
+}
+
+#scrollToTopBtn {
+    width: 50px; /* Настройте размер по вашему усмотрению */
+    height: 50px;
+    transition: opacity 0.3s ease-in-out;
+    opacity: 0.7;
+}
+
+#scrollToTopBtn:hover {
+    opacity: 1;
+}
+
+:root {
+    --color: #000;
+    --background-main: #fafafa;
+    --background-page: #f5f5f5;
+    --background-h-f-1: #FFF8E7;
+    --background-h-f-2: #FFE4B5;
+    --background-box: #fff;
+    --link: #6eb1c7;
+    --link-hover: #6e77c7;
+    --border-normal: #e0e0e0;
+    --border-box: #DFDFDF;
+    --border-navigation: #2C2C72;
+}
