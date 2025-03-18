@@ -193,6 +193,13 @@ img {
     opacity: 1;
 }
 
+#elements {
+    display: flex;
+    float: right;
+    width: 74vh;
+    margin-left: 10px;
+}
+
 :root {
     --color: #000;
     --background-main: #fafafa;
