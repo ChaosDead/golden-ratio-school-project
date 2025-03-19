@@ -36,15 +36,6 @@ body {
     border: 1px solid var(--border-box);
 }
 
-#main-container {
-    display: flex;
-}
-
-/* #image {
-    float: right;
-    position: fixed;
-} */
-
 #main {
     margin-left: 15%;
     margin-right: 15%;
@@ -77,6 +68,13 @@ p {
     line-height: 2;
 }
 
+#elements {
+    display: flex;
+    float: right;
+    width: 550px;
+    margin-left: 10px;
+}
+
 #navigation {
     width: 320px;
     height: 130px;
@@ -85,7 +83,7 @@ p {
     border: 1px solid var(--border-normal); */
 }
 
-.container{
+.container {
     display: flex;
     flex-direction: column;
     padding: 15px;
@@ -154,9 +152,15 @@ ul {
 #goldenratio {
     display: flex;
     float: right;
-    width: 74vh;
+    width: 700px;
     margin-left: 10px;
 }
+
+/* #Ohmbook {
+    display: flex;
+    float: left;
+    width: 400px;
+} */
 
 #gallery img {
     display: block;
@@ -191,13 +195,6 @@ img {
 
 #scrollToTopBtn:hover {
     opacity: 1;
-}
-
-#elements {
-    display: flex;
-    float: right;
-    width: 74vh;
-    margin-left: 10px;
 }
 
 :root {
