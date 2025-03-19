@@ -37,8 +37,8 @@ body {
 }
 
 #main {
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-left: 12%;
+    margin-right: 12%;
     background: var(--background-main);
     border: 1px solid var(--border-normal);
     padding: 20px 2.5%;
@@ -68,16 +68,16 @@ p {
     line-height: 2;
 }
 
-#elements {
+/* #elements {
     display: flex;
     float: right;
     width: 550px;
     margin-left: 10px;
-}
+} */
 
 #navigation {
     width: 320px;
-    height: 130px;
+    height: auto;
     overflow-y: auto;
     /* background: var(--background-box);
     border: 1px solid var(--border-normal); */
@@ -149,12 +149,12 @@ ul {
     cursor: pointer;
 }
 
-#goldenratio {
+/* #goldenratio {
     display: flex;
     float: right;
     width: 700px;
     margin-left: 10px;
-}
+} */
 
 /* #Ohmbook {
     display: flex;
