@@ -7,55 +7,55 @@
 }
 
 body {
+    font-size: 1.25rem;
     color: var(--color);
     background-color: var(--background-page);
 }
 
 #header, #footer {
     width: 100%;
-    height: 11vh;
+    height: 7.425rem;
     background: linear-gradient(to bottom, var(--background-h-f-1), var(--background-h-f-2));
-    border-bottom: 4px solid var(--border-normal);
+    border-bottom: 0.25rem solid var(--border-normal);
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 3.125rem;
 }
 
 #header {
     display: flex;
     flex-direction: row;
-    gap: 30px;
+    gap: 1.875rem;
     justify-content: center;
     align-items: center;
-    font-size: 40px;
+    font-size: 2.5rem;
     font-weight: 600;
 }
 
 #theme-container{
-    width: 35px;
-    height: 35px;
-    border: 1px solid var(--border-box);
+    width: 2.188rem;
+    height: 2.188rem;
+    border: 0.063rem solid var(--border-box);
 }
 
 #main {
-    margin-left: 12%;
-    margin-right: 12%;
+    margin: 0 12%;
     background: var(--background-main);
-    border: 1px solid var(--border-normal);
-    padding: 20px 2.5%;
+    border: 0.063rem solid var(--border-normal);
+    padding: 1.25rem 2.5%;
 }
 
 h1 {
-    margin-top: 7%;
+    margin-top: 2rem;
     text-align: center;
 }
 
 h2 {
-    font-size: inherit;
+    font-size: 1.5rem;
     font-weight: 500;
 }
 
 p {
-    text-indent: 18px;
+    text-indent: 1.125rem;
     text-align: justify;
 }
 
@@ -63,50 +63,40 @@ p {
     font-family: "Golos Text", serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 18px;
-    word-spacing: 4px;
+    word-spacing: 0.25rem;
     line-height: 2;
 }
 
-/* #elements {
-    display: flex;
-    float: right;
-    width: 550px;
-    margin-left: 10px;
-} */
-
 #navigation {
-    width: 320px;
+    width: 20rem;
     height: auto;
-    overflow-y: auto;
-    /* background: var(--background-box);
-    border: 1px solid var(--border-normal); */
+    /* overflow-y: auto; */
 }
 
-.container {
+.nav-box {
     display: flex;
     flex-direction: column;
-    padding: 15px;
-    font-size: 14px;
+    padding: 0.938rem;
+    font-size: 0.875rem;
 }
 
-#navigation-name {
+#nav-name {
     display: flex;
     flex-direction: row;
-    gap: 100px;
-    border-bottom: 4px double var(--border-navigation);
+    gap: 6.25rem;
+    border-bottom: 0.25rem double var(--border-navigation);
 }
 
 .button, img {
     user-select: none;
 }
 
-#navigation-button::before {
+#nav-button::before {
     content: '[';
     color: var(--color);
 }
 
-#navigation-button::after {
+#nav-button::after {
     content: ']';
     color: var(--color);
 }
@@ -125,14 +115,14 @@ ul {
 }
 
 .toclevel-2 {
-    margin-left: 11px;
+    margin-left: 0.688rem;
 }
 
 .tocnumber {
-    font-size: 13px;
+    font-size: 0.813rem;
 }
 
-#navigation-link a {
+#nav-link a {
     display: block;
     width: 100%;
     height: 100%;
@@ -141,26 +131,13 @@ ul {
     line-height: 2.3;
 }
 
-#navigation-link .toclevel-1 a:hover, #navigation-link .toclevel-2 a:hover {
+#nav-link .toclevel-1 a:hover, #nav-link .toclevel-2 a:hover {
     color: var(--link);
     background-color: var(--border-box);
-    border-radius: 4px;
-    padding-left: 5px;
+    border-radius: 0.25rem;
+    padding-left: 0.313rem;
     cursor: pointer;
 }
-
-/* #goldenratio {
-    display: flex;
-    float: right;
-    width: 700px;
-    margin-left: 10px;
-} */
-
-/* #Ohmbook {
-    display: flex;
-    float: left;
-    width: 400px;
-} */
 
 #gallery img {
     display: block;
@@ -174,27 +151,54 @@ img {
 
 .gallery-box {
     background-color: var(--background-box);
-    border: 2px solid var(--border-box);
-    margin-top: 25px;
-    padding: 20px;
+    border: 0.125rem solid var(--border-box);
+    margin-top: 1.563rem;
+    padding: 1.25rem;
 }
 
 #footer {
     margin-bottom: 0;
-    margin-top: 50px;
-    border-bottom: 50px;
-    border-top: 4px solid var(--border-normal);
+    margin-top: 3.125rem;
+    border-bottom: 3.125rem;
+    border-top: 0.25rem solid var(--border-normal);
 }
 
 #scrollToTopBtn {
-    width: 50px; /* Настройте размер по вашему усмотрению */
-    height: 50px;
+    width: 3.125rem; /* Настройте размер по вашему усмотрению */
+    height: 3.125rem;
     transition: opacity 0.3s ease-in-out;
     opacity: 0.7;
 }
 
 #scrollToTopBtn:hover {
     opacity: 1;
+}
+
+@media (max-width: 768px) {
+    body {
+      font-size: 0.875rem;
+    }
+    h1 {
+      font-size: 1.5rem;
+      margin: 0.9375rem 0;
+    }
+    h2 {
+      font-size: 1.125rem;
+    }
+    .text {
+      padding: 0 0.5rem;
+      margin: 0.625rem 0;
+    }
+    .image {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+    nav a {
+      font-size: 0.875rem;
+      padding: 0.3125rem 0.5rem;
+    }
 }
 
 :root {

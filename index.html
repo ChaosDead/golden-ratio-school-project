@@ -33,17 +33,17 @@
             <div class="box-text">
                 <h1>Почему золотое сечение так важно в архитектуре?</h1>
                 <div>
-                    <img id="elements" src="Картинки/'Начала' Евклида.jpg" alt="Книга 'Начала' Евклида" style="display: flex; float: right; width: 51vh; margin-left: 10px;">
+                    <img id="elements" src="Картинки/'Начала' Евклида.jpg" alt="Книга 'Начала' Евклида" style="float: right; width: 30rem; margin-left: 10px;">
                     <p class="greet">С древних времён архитекторы и художники использовали золотое сечение для создания гармоничных и эстетически совершенных сооружений. От Парфенона в Древней Греции до современных небоскрёбов — эта математическая пропорция лежит в основе самых впечатляющих зданий мира. Золотое сечение не только придаёт строениям визуальную привлекательность, но и вызывает у нас чувство гармонии и умиротворения.</p>
                     <p class="greet">Наш сайт поможет вам понять, как золотое сечение применяется в архитектуре, и вдохновит на создание собственных проектов, основанных на принципах божественной гармонии чисел.</p>
                 </div>
                 <div id="navigation">
-                    <div class="container">
-                        <div id="navigation-name">
+                    <div class="nav-box">
+                        <div id="nav-name">
                             <h2>Содержание</h2>
-                            <label><span id="navigation-button" class="button" title="Скрыть" onclick="toggleVisibility()">Скрыть</span></label>
+                            <label><span id="nav-button" class="button" title="Скрыть" onclick="toggleVisibility()">Скрыть</span></label>
                         </div>
-                        <ul id="navigation-link">
+                        <ul id="nav-link">
                             <li class="toclevel-1 tocsection-1">
                                 <a href="#Что такое золотое сечение?">
                                     <span class="tocnumber">1.</span>
@@ -106,9 +106,8 @@
                 <h1>Что такое золотое сечение?</h1>
                 <div>
                     <p>Золотое сечение — это математическое понятие<!--соотношение правило-->, которая встречается в природе, искусстве и архитектуре. Ее суть в таком отношении частей к целому, когда большая часть относится к меньшей так же, как целая к большей. Оно приблизительно равно 1,618. В математике его обозначают древнегреческой буквой <big>« φ »</big>.</p>
-                    <img id="goldenratio" src="Картинки/Золотое сечение.jpg" alt="Золотое сечение" style="display: block; margin: 1% auto 1%; text-align: center; width: 65vh;">
+                    <img id="goldenratio" src="Картинки/Золотое сечение.jpg" alt="Золотое сечение" style="display: block; width: 37rem; margin: 0 auto;">
                     <p>В дошедшей до нас античной литературе деление отрезка в крайнем и среднем отношении (ἄκρος καὶ μέσος λόγος) впервые встречается в «Началах» Евклида (около 300 лет до н. э.), где оно применяется для построения правильного пятиугольника. Неизвестно точно, кто и когда именно впервые начал использовать выражение «золотое сечение». Хотя некоторые авторитетные авторы связывают его появление с Леонардо да Винчи в XV веке или относят к XVI веку, самое раннее упоминание этого названия встречается у Мартина Ома в 1835 году, а именно в примечании ко второму изданию его книги «Чистая элементарная математика».</p>
-                    <!-- <img id="Ohmbook" src="Картинки/Книга Мартина Ома.jpg" alt=""> -->
                 </div>
             </div>
 
@@ -163,25 +162,6 @@
 
     <footer id="footer"></footer>
     <script>
-        const navigationLink = document.getElementById('navigation-link')
-        const navigationButton = document.getElementById('navigation-button')
-        function toggleVisibility() {
-            if (navigationLink.style.display === 'none') {
-                navigationLink.style.cssText = "display: flex; flex-direction: column;"
-            } else {
-                navigationLink.style.display = 'none'
-            }
-
-            if (navigationButton.innerHTML === 'Скрыть') {
-                navigationButton.innerHTML = 'Показать'
-                navigationButton.title = 'Показать'
-            } else {
-                navigationButton.innerHTML = 'Скрыть'
-                navigationButton.title = 'Скрыть'
-            }
-        }
-    </script>
-    <script>
         const moon = document.getElementById('button-icon-1')
         const sun = document.getElementById('button-icon-2')
         const html = document.documentElement
@@ -217,6 +197,25 @@
                 html.style.setProperty('--border-normal', '#e0e0e0')
                 html.style.setProperty('--border-box', '#DFDFDF')
                 html.style.setProperty('--border-navigation', '#2C2C72')
+            }
+        }
+    </script>
+    <script>
+        const navigationLink = document.getElementById('nav-link')
+        const navigationButton = document.getElementById('nav-button')
+        function toggleVisibility() {
+            if (navigationLink.style.display === 'none') {
+                navigationLink.style.cssText = "display: flex; flex-direction: column;"
+            } else {
+                navigationLink.style.display = 'none'
+            }
+
+            if (navigationButton.innerHTML === 'Скрыть') {
+                navigationButton.innerHTML = 'Показать'
+                navigationButton.title = 'Показать'
+            } else {
+                navigationButton.innerHTML = 'Скрыть'
+                navigationButton.title = 'Скрыть'
             }
         }
     </script>
