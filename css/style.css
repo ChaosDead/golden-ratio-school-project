@@ -142,6 +142,7 @@ ul {
 #gallery img {
     display: block;
     margin: 6% auto 2%;
+    border-radius: 5%;
 }
 
 img {
