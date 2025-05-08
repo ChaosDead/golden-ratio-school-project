@@ -209,10 +209,6 @@ img {
     .box-text {
         word-spacing: 0.125rem;
     }
-    nav a {
-      font-size: 0.875rem;
-      padding: 0.3125rem 0.5rem;
-    }
     #scrollToTopBtn {
         width: 2.125rem;
         height: 2.125rem;
