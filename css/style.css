@@ -200,9 +200,9 @@ img {
         font-size: 0.550rem;
         padding: 0.550rem;
     }
-    /* .tocnumber {
-        font-size: 0.573rem;
-    }     */
+    .tocnumber {
+        font-size: 0.543rem;
+    }
     #nav-link a {
         line-height: 1.7;
     }
