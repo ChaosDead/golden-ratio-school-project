@@ -197,11 +197,11 @@ img {
         width: 15rem;
     }
     .nav-box{
-        font-size: 0.550rem;
+        font-size: 0.650rem;
         padding: 0.550rem;
     }
     .tocnumber {
-        font-size: 8px;
+        font-size: 10px;
     }
     #nav-link a {
         line-height: 1.7;
